@@ -17,8 +17,12 @@ def validate_schema(xml_path, xsd_path):
 
 def validate_dtd(xml_path, dtd_path):
   try:
+    print("a")
+
     with open(dtd_path, 'rb') as dtd_file:
       dtd = etree.DTD(dtd_file)
+
+    print("a")
     
     with open(xml_path, 'rb') as xml_file:
       xml_tree = etree.parse(xml_file)
