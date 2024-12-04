@@ -1,6 +1,7 @@
 from lxml import etree
+from typing import Tuple, List, Union
 
-def validate_schema(xml_path, xsd_path):
+def validate_schema(xml_path: str, xsd_path: str) -> Tuple[bool, str]:
   try:
     with open(xsd_path, 'rb') as xsd_file:
       schema_root = etree.XML(xsd_file.read())
@@ -12,10 +13,10 @@ def validate_schema(xml_path, xsd_path):
     is_valid = schema.validate(xml_tree)
     return is_valid, schema.error_log if not is_valid else []
   except (etree.XMLSyntaxError, etree.XMLSchemaError) as e:
-    return False, [str(e)]
+    return False, str(e)
 
 
-def validate_dtd(xml_path, dtd_path):
+def validate_dtd(xml_path: str, dtd_path : str) -> Tuple[bool, str]:
   try:
     print("a")
 
@@ -30,4 +31,4 @@ def validate_dtd(xml_path, dtd_path):
     is_valid = dtd.validate(xml_tree)
     return is_valid, dtd.error_log if not is_valid else []
   except (etree.XMLSyntaxError, etree.DTDParseError) as e:
-    return False, [str(e)]
+    return False, str(e)
