@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT nfeProc (NFe)>
+<!ATTLIST nfeProc versao CDATA #REQUIRED
+  >
+
+<!ELEMENT NFe (infNFe)>
+
+<!ELEMENT infNFe (ide, emit, dest, entrega?, det+, total, transp, pag?, infAdic?, infRespTec?)>
+<!ATTLIST infNFe
+  Id CDATA #REQUIRED
+  versao CDATA #REQUIRED
+  >
+
+<!ELEMENT ide (cUF, cNF, natOp, mod, serie, nNF, dhEmi, dhSaiEnt?, tpNF, idDest, cMunFG, tpImp, tpEmis, cDV, tpAmb, finNFe, indFinal, indPres, indIntermed, procEmi, verProc)>
+
+<!ELEMENT cUF (#PCDATA)>
+<!ELEMENT cNF (#PCDATA)>
+<!ELEMENT natOp (#PCDATA)>
+<!ELEMENT mod (#PCDATA)>
+<!ELEMENT serie (#PCDATA)>
+<!ELEMENT nNF (#PCDATA)>
+<!ELEMENT dhEmi (#PCDATA)>
+<!ELEMENT dhSaiEnt (#PCDATA)>
+<!ELEMENT tpNF (#PCDATA)>
+<!ELEMENT idDest (#PCDATA)>
+<!ELEMENT cMunFG (#PCDATA)>
+<!ELEMENT tpImp (#PCDATA)>
+<!ELEMENT tpEmis (#PCDATA)>
+<!ELEMENT cDV (#PCDATA)>
+<!ELEMENT tpAmb (#PCDATA)>
+<!ELEMENT finNFe (#PCDATA)>
+<!ELEMENT indFinal (#PCDATA)>
+<!ELEMENT indPres (#PCDATA)>
+<!ELEMENT indIntermed (#PCDATA)>
+<!ELEMENT procEmi (#PCDATA)>
+<!ELEMENT verProc (#PCDATA)>
+
+
+<!ELEMENT emit (CNPJ, xNome, enderEmit, IE, CRT)>
+<!ELEMENT CNPJ (#PCDATA)>
+<!ELEMENT xNome (#PCDATA)>
+
+<!ELEMENT enderEmit (xLgr, nro, xBairro, cMun, xMun, UF, CEP, cPais, xPais, fone)>
+<!ELEMENT xLgr (#PCDATA)>
+<!ELEMENT nro (#PCDATA)>
+<!ELEMENT xBairro (#PCDATA)>
+<!ELEMENT cMun (#PCDATA)>
+<!ELEMENT xMun (#PCDATA)>
+<!ELEMENT UF (#PCDATA)>
+<!ELEMENT CEP (#PCDATA)>
+<!ELEMENT cPais (#PCDATA)>
+<!ELEMENT xPais (#PCDATA)>
+<!ELEMENT fone (#PCDATA)>
+<!ELEMENT IE (#PCDATA)>
+<!ELEMENT CRT (#PCDATA)>
+
+<!ELEMENT dest (CPF, xNome, enderDest, indIEDest)>
+<!ELEMENT CPF (#PCDATA)>
+<!ELEMENT enderDest (xLgr, nro, xBairro, cMun, xMun, UF, CEP, cPais, xPais, fone)>
+<!ELEMENT indIEDest (#PCDATA)>
+
+<!ELEMENT entrega (CPF, xNome, xLgr, nro, xBairro, cMun, xMun, UF, CEP, cPais, xPais)>
+
+<!ELEMENT det (prod, imposto)>
+<!ATTLIST det nItem CDATA #REQUIRED>
+<!ELEMENT prod (cProd, cEAN, xProd, NCM, CFOP, uCom, qCom, vUnCom, vProd, cEANTrib, uTrib, qTrib, vUnTrib, indTot)>
+<!ELEMENT cProd (#PCDATA)>
+<!ELEMENT cEAN (#PCDATA)>
+<!ELEMENT xProd (#PCDATA)>
+<!ELEMENT NCM (#PCDATA)>
+<!ELEMENT CFOP (#PCDATA)>
+<!ELEMENT uCom (#PCDATA)>
+<!ELEMENT qCom (#PCDATA)>
+<!ELEMENT vUnCom (#PCDATA)>
+<!ELEMENT vProd (#PCDATA)>
+<!ELEMENT cEANTrib (#PCDATA)>
+<!ELEMENT uTrib (#PCDATA)>
+<!ELEMENT qTrib (#PCDATA)>
+<!ELEMENT vUnTrib (#PCDATA)>
+<!ELEMENT indTot (#PCDATA)>
+
+<!ELEMENT imposto (vTotTrib, ICMS, PIS, COFINS)>
+<!ELEMENT vTotTrib (#PCDATA)>
+<!ELEMENT ICMS (ICMS00)>
+<!ELEMENT ICMS00 (orig, CST, modBC, vBC, pICMS, vICMS)>
+<!ELEMENT orig (#PCDATA)>
+<!ELEMENT CST (#PCDATA)>
+<!ELEMENT modBC (#PCDATA)>
+<!ELEMENT vBC (#PCDATA)>
+<!ELEMENT pICMS (#PCDATA)>
+<!ELEMENT vICMS (#PCDATA)>
+
+<!ELEMENT PIS (PISOutr)>
+<!ELEMENT PISOutr (CST, vBC, pPIS, vPIS)>
+<!ELEMENT COFINS (COFINSOutr)>
+<!ELEMENT COFINSOutr (CST, qBCProd, vAliqProd, vCOFINS)>
+<!ELEMENT pPIS (#PCDATA)>
+<!ELEMENT vPIS (#PCDATA)>
+<!ELEMENT qBCProd (#PCDATA)>
+<!ELEMENT vAliqProd (#PCDATA)>
+<!ELEMENT vCOFINS (#PCDATA)>
+
+<!ELEMENT total (ICMSTot)>
+<!ELEMENT ICMSTot (vBC, vICMS, vICMSDeson, vFCP, vBCST, vST, vFCPST, vFCPSTRet, vProd, vFrete, vSeg, vDesc, vII, vIPI, vIPIDevol, vPIS, vCOFINS, vOutro, vNF, vTotTrib)>
+<!ELEMENT vICMSDeson (#PCDATA)>
+<!ELEMENT vFCP (#PCDATA)>
+<!ELEMENT vBCST (#PCDATA)>
+<!ELEMENT vST (#PCDATA)>
+<!ELEMENT vFCPST (#PCDATA)>
+<!ELEMENT vFCPSTRet (#PCDATA)>
+<!ELEMENT vFrete (#PCDATA)>
+<!ELEMENT vSeg (#PCDATA)>
+<!ELEMENT vDesc (#PCDATA)>
+<!ELEMENT vII (#PCDATA)>
+<!ELEMENT vIPI (#PCDATA)>
+<!ELEMENT vIPIDevol (#PCDATA)>
+<!ELEMENT vOutro (#PCDATA)>
+<!ELEMENT vNF (#PCDATA)>
+
+<!ELEMENT transp (modFrete)>
+<!ELEMENT modFrete (#PCDATA)>
+
+<!ELEMENT cobr (fat)>
+<!ELEMENT fat (nFat, vOrig, vLiq)>
+<!ELEMENT nFat (#PCDATA)>
+<!ELEMENT vOrig (#PCDATA)>
+<!ELEMENT vLiq (#PCDATA)>
+
+<!ELEMENT pag (detPag, vTroco)>
+<!ELEMENT detPag (indPag, tPag, vPag)>
+<!ELEMENT indPag (#PCDATA)>
+<!ELEMENT tPag (#PCDATA)>
+<!ELEMENT vPag (#PCDATA)>
+<!ELEMENT vTroco (#PCDATA)>
+
+<!ELEMENT infAdic (infCpl, obsCont)>
+<!ELEMENT infCpl (#PCDATA)>
+<!ELEMENT obsCont (xTexto)>
+<!ATTLIST obsCont xCampo CDATA #REQUIRED>
+<!ELEMENT xTexto (#PCDATA)>
+
+<!ELEMENT infRespTec (CNPJ, xContato, email, fone)>
+<!ELEMENT xContato (#PCDATA)>
+<!ELEMENT email (#PCDATA)>

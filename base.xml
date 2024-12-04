@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc versao="4.00">
+  <NFe>
+    <infNFe Id="NFe43240837916119000119550010000000061004500991" versao="4.00">
+      <!-- identificacao -->
+      <ide>
+        <cUF>cuf</cUF>
+        <cNF>cnf</cNF>
+        <natOp>natop</natOp>
+        <mod>mod</mod>
+        <serie>seriw</serie>
+        <nNF>nnf</nNF>
+        <dhEmi>dhEmi</dhEmi>
+        <tpNF>tpnf</tpNF>
+        <idDest>iddest</idDest>
+        <cMunFG>cmunfg</cMunFG>
+        <tpImp>tpimp</tpImp>
+        <tpEmis>tpemis</tpEmis>
+        <cDV>cdv</cDV>
+        <tpAmb>tpamb</tpAmb>
+        <finNFe>finnfe</finNFe>
+        <indFinal>indfinal</indFinal>
+        <indPres>indpres</indPres>
+        <indIntermed>indintermed</indIntermed>
+        <procEmi>procemi</procEmi>
+        <verProc>veroproc</verProc>
+      </ide>
+      <!-- emissor -->
+      <emit>
+        <CNPJ>cnpj</CNPJ>
+        <xNome>xnome</xNome>
+        <enderEmit>
+          <xLgr>xlgr</xLgr>
+          <nro>nro</nro>
+          <xBairro>xbairro</xBairro>
+          <cMun>cmun</cMun>
+          <xMun>xmun</xMun>
+          <UF>uf</UF>
+          <CEP>cep</CEP>
+          <cPais>cpais</cPais>
+          <xPais>xpais</xPais>
+          <fone>fone</fone>
+        </enderEmit>
+        <IE>ie</IE>
+        <CRT>crt</CRT>
+      </emit>
+      <!-- destinatario -->
+      <dest>
+        <CPF>cpf</CPF>
+        <xNome>xnome</xNome>
+        <enderDest>
+          <xLgr>xlgr</xLgr>
+          <nro>nro</nro>
+          <xBairro>xbairro</xBairro>
+          <cMun>cmun</cMun>
+          <xMun>xmun</xMun>
+          <UF>uf</UF>
+          <CEP>cep</CEP>
+          <cPais>cpais</cPais>
+          <xPais>xpais</xPais>
+          <fone>fone</fone>
+        </enderDest>
+        <indIEDest>indiedest</indIEDest>
+      </dest>
+
+      <!-- entrega -->
+      <entrega>
+        <CPF>cpf</CPF>
+        <xNome>xnome</xNome>
+        <xLgr>xlgr</xLgr>
+        <nro>nro</nro>
+        <xBairro>xbairro</xBairro>
+        <cMun>cmun</cMun>
+        <xMun>xmun</xMun>
+        <UF>uf</UF>
+        <CEP>cep</CEP>
+        <cPais>cpais</cPais>
+        <xPais>cpais</xPais>
+      </entrega>
+
+      <!-- item -->
+      <det nItem="1">
+        <prod>
+          <cProd>cprod</cProd>
+          <cEAN>cean</cEAN>
+          <xProd>xprod</xProd>
+          <NCM>ncm</NCM>
+          <CFOP>cfop</CFOP>
+          <uCom>ucom</uCom>
+          <qCom>qcom</qCom>
+          <vUnCom>vuncom</vUnCom>
+          <vProd>vprod</vProd>
+          <cEANTrib>ceantrib</cEANTrib>
+          <uTrib>utrib</uTrib>
+          <qTrib>qtrib</qTrib>
+          <vUnTrib>vuntrib</vUnTrib>
+          <indTot>indtot</indTot>
+        </prod>
+        <imposto>
+          <vTotTrib>vtottrib</vTotTrib>
+          <ICMS>
+            <ICMS00>
+              <orig>orig</orig>
+              <CST>cst</CST>
+              <modBC>mobbc</modBC>
+              <vBC>vbc</vBC>
+              <pICMS>picms</pICMS>
+              <vICMS>vicms</vICMS>
+            </ICMS00>
+          </ICMS>
+          <PIS>
+            <PISOutr>
+              <CST>cst</CST>
+              <vBC>vbc</vBC>
+              <pPIS>ppis</pPIS>
+              <vPIS>vpis</vPIS>
+            </PISOutr>
+          </PIS>
+          <COFINS>
+            <COFINSOutr>
+              <CST>cst</CST>
+              <qBCProd>qbcprod</qBCProd>
+              <vAliqProd>valiqprod</vAliqProd>
+              <vCOFINS>vconfins</vCOFINS>
+            </COFINSOutr>
+          </COFINS>
+        </imposto>
+      </det>
+
+      <det nItem="1">
+        <prod>
+          <cProd>cprod</cProd>
+          <cEAN>cean</cEAN>
+          <xProd>xprod</xProd>
+          <NCM>ncm</NCM>
+          <CFOP>cfop</CFOP>
+          <uCom>ucom</uCom>
+          <qCom>qcom</qCom>
+          <vUnCom>vuncom</vUnCom>
+          <vProd>vprod</vProd>
+          <cEANTrib>ceantrib</cEANTrib>
+          <uTrib>utrib</uTrib>
+          <qTrib>qtrib</qTrib>
+          <vUnTrib>vuntrib</vUnTrib>
+          <indTot>indtot</indTot>
+        </prod>
+        <imposto>
+          <vTotTrib>vtottrib</vTotTrib>
+          <ICMS>
+            <ICMS00>
+              <orig>orig</orig>
+              <CST>cst</CST>
+              <modBC>mobbc</modBC>
+              <vBC>vbc</vBC>
+              <pICMS>picms</pICMS>
+              <vICMS>vicms</vICMS>
+            </ICMS00>
+          </ICMS>
+          <PIS>
+            <PISOutr>
+              <CST>cst</CST>
+              <vBC>vbc</vBC>
+              <pPIS>ppis</pPIS>
+              <vPIS>vpis</vPIS>
+            </PISOutr>
+          </PIS>
+          <COFINS>
+            <COFINSOutr>
+              <CST>cst</CST>
+              <qBCProd>qbcprod</qBCProd>
+              <vAliqProd>valiqprod</vAliqProd>
+              <vCOFINS>vconfins</vCOFINS>
+            </COFINSOutr>
+          </COFINS>
+        </imposto>
+      </det>
+      
+      <!-- total -->
+      <total>
+        <ICMSTot>
+          <vBC>vbc</vBC>
+          <vICMS>vicms</vICMS>
+          <vICMSDeson>vicmsdeson</vICMSDeson>
+          <vFCP>vfcp</vFCP>
+          <vBCST>vbcst</vBCST>
+          <vST>vst</vST>
+          <vFCPST>vfcpst</vFCPST>
+          <vFCPSTRet>vfcpstret</vFCPSTRet>
+          <vProd>vprod</vProd>
+          <vFrete>vfrete</vFrete>
+          <vSeg>vseg</vSeg>
+          <vDesc>vdesc</vDesc>
+          <vII>vii</vII>
+          <vIPI>vipi</vIPI>
+          <vIPIDevol>vipidevol</vIPIDevol>
+          <vPIS>vpis</vPIS>
+          <vCOFINS>vcofins</vCOFINS>
+          <vOutro>voutro</vOutro>
+          <vNF>vnf</vNF>
+          <vTotTrib>vtottrib</vTotTrib>
+        </ICMSTot>
+      </total>
+
+      <!-- transportadora -->
+      <transp>
+        <modFrete>modfrete</modFrete>
+      </transp>
+
+      <pag>
+        <detPag>
+          <indPag>indpag</indPag>
+          <tPag>tpag</tPag>
+          <vPag>vpag</vPag>
+        </detPag>
+        <vTroco>vtroco</vTroco>
+      </pag>
+
+      <infAdic>
+        <infCpl>infcpl</infCpl>
+        <obsCont xCampo="Pedido">
+          <xTexto>xtexto</xTexto>
+        </obsCont>
+      </infAdic>
+
+      <infRespTec>
+        <CNPJ>cnpj</CNPJ>
+        <xContato>xcontato</xContato>
+        <email>email</email>
+        <fone>fone</fone>
+      </infRespTec>
+
+    </infNFe>
+  </NFe>
+</nfeProc>
