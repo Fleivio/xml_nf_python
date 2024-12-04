@@ -1,0 +1,227 @@
+{
+    "nfeProc": {
+        "@versao": "4.00",
+        "NFe": {
+            "infNFe": {
+                "@Id": "NFe43240837916119000119550010000000061004500991",
+                "@versao": "4.00",
+                "ide": {
+                    "cUF": "cuf",
+                    "cNF": "cnf",
+                    "natOp": "natop",
+                    "mod": "mod",
+                    "serie": "seriw",
+                    "nNF": "nnf",
+                    "dhEmi": "dhEmi",
+                    "tpNF": "tpnf",
+                    "idDest": "iddest",
+                    "cMunFG": "cmunfg",
+                    "tpImp": "tpimp",
+                    "tpEmis": "tpemis",
+                    "cDV": "cdv",
+                    "tpAmb": "tpamb",
+                    "finNFe": "finnfe",
+                    "indFinal": "indfinal",
+                    "indPres": "indpres",
+                    "indIntermed": "indintermed",
+                    "procEmi": "procemi",
+                    "verProc": "veroproc"
+                },
+                "emit": {
+                    "CNPJ": "cnpj",
+                    "xNome": "xnome",
+                    "enderEmit": {
+                        "xLgr": "xlgr",
+                        "nro": "nro",
+                        "xBairro": "xbairro",
+                        "cMun": "cmun",
+                        "xMun": "xmun",
+                        "UF": "uf",
+                        "CEP": "cep",
+                        "cPais": "cpais",
+                        "xPais": "xpais",
+                        "fone": "fone"
+                    },
+                    "IE": "ie",
+                    "CRT": "crt"
+                },
+                "dest": {
+                    "CPF": "cpf",
+                    "xNome": "xnome",
+                    "enderDest": {
+                        "xLgr": "xlgr",
+                        "nro": "nro",
+                        "xBairro": "xbairro",
+                        "cMun": "cmun",
+                        "xMun": "xmun",
+                        "UF": "uf",
+                        "CEP": "cep",
+                        "cPais": "cpais",
+                        "xPais": "xpais",
+                        "fone": "fone"
+                    },
+                    "indIEDest": "indiedest"
+                },
+                "entrega": {
+                    "CPF": "cpf",
+                    "xNome": "xnome",
+                    "xLgr": "xlgr",
+                    "nro": "nro",
+                    "xBairro": "xbairro",
+                    "cMun": "cmun",
+                    "xMun": "xmun",
+                    "UF": "uf",
+                    "CEP": "cep",
+                    "cPais": "cpais",
+                    "xPais": "cpais"
+                },
+                "det": [
+                    {
+                        "@nItem": "1",
+                        "prod": {
+                            "cProd": "cprod",
+                            "cEAN": "cean",
+                            "xProd": "xprod",
+                            "NCM": "ncm",
+                            "CFOP": "cfop",
+                            "uCom": "ucom",
+                            "qCom": "qcom",
+                            "vUnCom": "vuncom",
+                            "vProd": "vprod",
+                            "cEANTrib": "ceantrib",
+                            "uTrib": "utrib",
+                            "qTrib": "qtrib",
+                            "vUnTrib": "vuntrib",
+                            "indTot": "indtot"
+                        },
+                        "imposto": {
+                            "vTotTrib": "vtottrib",
+                            "ICMS": {
+                                "ICMS00": {
+                                    "orig": "orig",
+                                    "CST": "cst",
+                                    "modBC": "mobbc",
+                                    "vBC": "vbc",
+                                    "pICMS": "picms",
+                                    "vICMS": "vicms"
+                                }
+                            },
+                            "PIS": {
+                                "PISOutr": {
+                                    "CST": "cst",
+                                    "vBC": "vbc",
+                                    "pPIS": "ppis",
+                                    "vPIS": "vpis"
+                                }
+                            },
+                            "COFINS": {
+                                "COFINSOutr": {
+                                    "CST": "cst",
+                                    "qBCProd": "qbcprod",
+                                    "vAliqProd": "valiqprod",
+                                    "vCOFINS": "vconfins"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "@nItem": "1",
+                        "prod": {
+                            "cProd": "cprod",
+                            "cEAN": "cean",
+                            "xProd": "xprod",
+                            "NCM": "ncm",
+                            "CFOP": "cfop",
+                            "uCom": "ucom",
+                            "qCom": "qcom",
+                            "vUnCom": "vuncom",
+                            "vProd": "vprod",
+                            "cEANTrib": "ceantrib",
+                            "uTrib": "utrib",
+                            "qTrib": "qtrib",
+                            "vUnTrib": "vuntrib",
+                            "indTot": "indtot"
+                        },
+                        "imposto": {
+                            "vTotTrib": "vtottrib",
+                            "ICMS": {
+                                "ICMS00": {
+                                    "orig": "orig",
+                                    "CST": "cst",
+                                    "modBC": "mobbc",
+                                    "vBC": "vbc",
+                                    "pICMS": "picms",
+                                    "vICMS": "vicms"
+                                }
+                            },
+                            "PIS": {
+                                "PISOutr": {
+                                    "CST": "cst",
+                                    "vBC": "vbc",
+                                    "pPIS": "ppis",
+                                    "vPIS": "vpis"
+                                }
+                            },
+                            "COFINS": {
+                                "COFINSOutr": {
+                                    "CST": "cst",
+                                    "qBCProd": "qbcprod",
+                                    "vAliqProd": "valiqprod",
+                                    "vCOFINS": "vconfins"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "total": {
+                    "ICMSTot": {
+                        "vBC": "vbc",
+                        "vICMS": "vicms",
+                        "vICMSDeson": "vicmsdeson",
+                        "vFCP": "vfcp",
+                        "vBCST": "vbcst",
+                        "vST": "vst",
+                        "vFCPST": "vfcpst",
+                        "vFCPSTRet": "vfcpstret",
+                        "vProd": "vprod",
+                        "vFrete": "vfrete",
+                        "vSeg": "vseg",
+                        "vDesc": "vdesc",
+                        "vII": "vii",
+                        "vIPI": "vipi",
+                        "vIPIDevol": "vipidevol",
+                        "vPIS": "vpis",
+                        "vCOFINS": "vcofins",
+                        "vOutro": "voutro",
+                        "vNF": "vnf",
+                        "vTotTrib": "vtottrib"
+                    }
+                },
+                "transp": {
+                    "modFrete": "modfrete"
+                },
+                "pag": {
+                    "detPag": {
+                        "indPag": "indpag",
+                        "tPag": "tpag",
+                        "vPag": "vpag"
+                    },
+                    "vTroco": "vtroco"
+                },
+                "infAdic": {
+                    "infCpl": "infcpl",
+                    "obsCont": {
+                        "@xCampo": "Pedido",
+                        "xTexto": "xtexto"
+                    }
+                },
+                "infRespTec": {
+                    "CNPJ": "cnpj",
+                    "xContato": "xcontato",
+                    "email": "email",
+                    "fone": "fone"
+                }
+            }
+        }
+    }
+}
