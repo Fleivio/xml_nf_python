@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template
 import os
 from app.src.tojson import read_as_dict
+from lxml import etree
 
 main = Blueprint('main', __name__)
 
@@ -13,7 +14,6 @@ def notas_path():
 @main.route('/')
 def home():
     dict_objs = list(map(lambda x: read_as_dict(x), notas_path()))
-    print(dict_objs)
 
     return render_template('index.html', notas = dict_objs)
 
