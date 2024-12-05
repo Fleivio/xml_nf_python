@@ -39,16 +39,69 @@ def nf_view(nfe):
 
 @main.route('/impostos')
 def impostos_totais():
-    tributacao = list(map( lambda name: read_as_dict(name, '/nfeProc/NFe/infNFe/total/ICMSTot')[0],
-                         notas_path()))
-    tributacao.sort(key=lambda x: float(x['ICMSTot']['vTotTrib']), reverse=True)
-    return render_template('impostos.html', tribs = tributacao)
+    def mk_obj(path):
+        trib = read_as_dict(path, '/nfeProc/NFe/infNFe/total/ICMSTot')[0]
+        itens = read_as_dict(path, '/nfeProc/NFe/infNFe/det')
+        return {
+            'tribut': trib,
+            'itens': itens
+        }
+
+    notas = list(map( lambda name: mk_obj(name), notas_path()))
+    notas.sort(key=lambda x: float(x['tribut']['ICMSTot']['vTotTrib']), reverse=True)
+    return render_template('impostos.html', notas = notas)
 
 
 @main.route('/fornecedores')
 def fornecedores():
-    pass
+    fornecedores = []
+    cnpj_acc = []
+
+    for p in notas_path():
+        codigo = read_as_dict(p, '/nfeProc/NFe/infNFe/ide/cNF')[0]['cNF']
+        emit = read_as_dict(p, '/nfeProc/NFe/infNFe/emit')[0]
+        cnpj = read_as_dict(p, '/nfeProc/NFe/infNFe/emit/CNPJ')[0]['CNPJ']
+
+        emit['notas'] = []
+
+        if cnpj in cnpj_acc:
+            for f in fornecedores:
+                if f['emit']['CNPJ'] == cnpj:
+                    f['notas'].append({'codigo': codigo, 'path': p})
+        else:
+            emit['notas'].append({'codigo': codigo, 'path': p})
+            fornecedores.append(emit)
+            cnpj_acc.append(cnpj)
+
+
+    fornecedores.sort(key=lambda x: x['emit']['xNome'], reverse=False)
+
+
+    return render_template('fornecedores.html', fornecedores = fornecedores)
+
 
 @main.route('/transportadoras')
 def transportadoras():
-    pass
+    transportadoras = []
+    cnpj_acc = []
+
+    for p in notas_path():
+        codigo = read_as_dict(p, '/nfeProc/NFe/infNFe/ide/cNF')[0]['cNF']
+        transp = read_as_dict(p, '/nfeProc/NFe/infNFe/transp/transporta')[0]
+        cnpj = read_as_dict(p, '/nfeProc/NFe/infNFe/transp/transporta/CNPJ')[0]['CNPJ']
+
+        transp['notas'] = []
+
+        if cnpj in cnpj_acc:
+            for t in transportadoras:
+                if t['transporta']['CNPJ'] == cnpj:
+                    t['notas'].append({'codigo': codigo, 'path': p})
+        else:
+            transp['notas'].append({'codigo': codigo, 'path': p})
+            transportadoras.append(transp)
+            cnpj_acc.append(cnpj)
+
+    transportadoras.sort(key=lambda x: x['transporta']['xNome'], reverse=False)
+
+
+    return render_template('transportadoras.html', transportadoras = transportadoras)

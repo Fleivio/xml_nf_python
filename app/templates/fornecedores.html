@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %}fornecedores{% endblock %}
+
+{% block pg_title %}
+<p class="h3 text-muted">Fornecedores</p>
+{% endblock %}
+
+{%block content%}
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">CNPJ</th>
+      <th scope="col">Nome</th>
+      <th scope="col">CEP</th>
+      <th scope="col">Notas geradas</th>
+    </tr>
+  </thead>
+    <tbody>
+      {% for fornecedor in fornecedores %}
+        <tr>
+          <td >
+            {{fornecedor.emit.CNPJ}}
+          </td>
+          <td>
+            {{fornecedor.emit.xNome}}
+          </td>
+          <td>
+            {{fornecedor.emit.enderEmit.CEP}}
+          </td>
+          <td>
+            {%for n in fornecedor.notas%}
+            <a href="{{n.path}}">{{n.codigo}}</a>
+            {%endfor%}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

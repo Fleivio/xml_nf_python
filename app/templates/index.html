@@ -13,7 +13,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">Número</th>
+      <th scope="col">Código</th>
       <th scope="col">Número de Produtos</th>
       <th scope="col">Valor Total (R$)</th>
       <th scope="col">Valor Total de Impostos (R$)</th>
@@ -24,7 +24,7 @@
   <tbody>
     {% for nota in notas %}
     <tr>
-      <td><a href="{{ nota._path }}" target="_blank">{{loop.index}}</a></td>
+      <td><a href="{{ nota._path }}" target="_blank">{{nota.nfeProc.NFe.infNFe.ide.cNF}}</a></td>
       {% if nota.nfeProc.NFe.infNFe.det.__class__.__name__ == 'list' %}
       <td>{{ nota.nfeProc.NFe.infNFe.det | length }}</td>
       {%else%}

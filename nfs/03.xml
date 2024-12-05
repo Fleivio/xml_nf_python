@@ -5,7 +5,7 @@
       <!-- identificacao -->
       <ide>
         <cUF>43</cUF>
-        <cNF>0000000</cNF>
+        <cNF>3</cNF>
         <natOp>Venda de merc adquirida ou recebida de terceiros</natOp>
         <mod>65</mod>
         <serie>1</serie>
@@ -27,8 +27,8 @@
       </ide>
       <!-- emissor -->
       <emit>
-        <CNPJ>00. 000. 000/0001-00</CNPJ>
-        <xNome>AMAZON</xNome>
+        <CNPJ>02. 000. 000/0001-00</CNPJ>
+        <xNome>CMAZON</xNome>
         <enderEmit>
           <xLgr>ESTRADA DA PEDREIRA PAVILHAO 5</xLgr>
           <nro>64</nro>

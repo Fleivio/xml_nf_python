@@ -1,0 +1,39 @@
+{% extends "base.html" %} {% block title %}Transportadoras{% endblock %}
+
+{% block pg_title %}
+<p class="h3 text-muted">Transportadoras</p>
+{% endblock %}
+
+{%block content%}
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">CNPJ</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Municipio</th>
+      <th scope="col">Notas geradas</th>
+    </tr>
+  </thead>
+    <tbody>
+      {% for transportadora in transportadoras %}
+        <tr>
+          <td >
+            {{transportadora.transporta.CNPJ}}
+          </td>
+          <td>
+            {{transportadora.transporta.xNome}}
+          </td>
+          <td>
+            {{transportadora.transporta.xMun}}
+          </td>
+          <td>
+            {%for n in transportadora.notas%}
+            <a href="{{n.path}}">{{n.codigo}}</a>
+            {%endfor%}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

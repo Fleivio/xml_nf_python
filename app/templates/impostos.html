@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% extends "base.html" %} {% block title %}Tributação{% endblock %}
 
 {% block pg_title %}
 <p class="h3 text-muted">Tributação</p>
@@ -9,7 +9,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">Número</th>
+      <th scope="col">Itens</th>
       <th scope="col">Valor Base</th>
       <th scope="col">Valor ICMS</th>
       <th scope="col">Valor IPI</th>
@@ -19,15 +19,23 @@
     </tr>
   </thead>
     <tbody>
-      {% for trib in tribs %}
+      {% for nota in notas %}
         <tr>
-          <td>{{trib._path}}</td>
-          <td>R$ {{ trib.ICMSTot.vBC }}</td>
-          <td>R$ {{ trib.ICMSTot.vICMS }}</td>
-          <td>R$ {{ trib.ICMSTot.vIPI }}</td>
-          <td>R$ {{ trib.ICMSTot.vPIS }}</td>
-          <td>R$ {{ trib.ICMSTot.vCOFINS }}</td>
-          <td>R$ {{ trib.ICMSTot.vTotTrib }}</td>
+          <td ><a href="{{nota.tribut._path}}">
+            {%if nota.itens.__class__.__name__ == 'list' %}
+              {%for item in nota.itens%}
+                {{ item.det.prod.xProd }}<br>
+              {%endfor%}
+            {%else%}
+              {{ nota.itens.det.prod.xProc }}
+            {%endif%}</a>
+          </td>
+          <td>R$ {{ nota.tribut.ICMSTot.vBC }}</td>
+          <td>R$ {{ nota.tribut.ICMSTot.vICMS }}</td>
+          <td>R$ {{ nota.tribut.ICMSTot.vIPI }}</td>
+          <td>R$ {{ nota.tribut.ICMSTot.vPIS }}</td>
+          <td>R$ {{ nota.tribut.ICMSTot.vCOFINS }}</td>
+          <td>R$ {{ nota.tribut.ICMSTot.vTotTrib }}</td>
         </tr>
       {% endfor %}
     </tbody>
