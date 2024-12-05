@@ -18,20 +18,29 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/impostos">Impostos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/fornecedores">Fornecedores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/transportadoras">Transportadoras</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="col-12">
+    <div class="col-12 p-4">
         <h1>{% block pg_title %}{% endblock %}</h1>
     </div>
     
-    <div class="col-12">
+    <div class="col-12 p-2">
         <span>{% block additional_info %}{% endblock %}</span>
     </div>
     
-    <div class="col-12">
+    <div class="col-12 p-4">
         {% block content %}
         {% endblock %}
     </div>

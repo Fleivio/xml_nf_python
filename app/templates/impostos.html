@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+{% block pg_title %}
+<p class="h3 text-muted">Tributação</p>
+{% endblock %}
+
+{%block content%}
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Número</th>
+      <th scope="col">Valor Base</th>
+      <th scope="col">Valor ICMS</th>
+      <th scope="col">Valor IPI</th>
+      <th scope="col">Valor PIS</th>
+      <th scope="col">Valor COFINS</th>
+      <th scope="col">Valor Total</th>
+    </tr>
+  </thead>
+    <tbody>
+      {% for trib in tribs %}
+        <tr>
+          <td>{{trib._path}}</td>
+          <td>R$ {{ trib.ICMSTot.vBC }}</td>
+          <td>R$ {{ trib.ICMSTot.vICMS }}</td>
+          <td>R$ {{ trib.ICMSTot.vIPI }}</td>
+          <td>R$ {{ trib.ICMSTot.vPIS }}</td>
+          <td>R$ {{ trib.ICMSTot.vCOFINS }}</td>
+          <td>R$ {{ trib.ICMSTot.vTotTrib }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
