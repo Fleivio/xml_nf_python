@@ -81,7 +81,7 @@
 <!ELEMENT vUnTrib (#PCDATA)>
 <!ELEMENT indTot (#PCDATA)>
 
-<!ELEMENT imposto (vTotTrib, ICMS, PIS, COFINS)>
+<!ELEMENT imposto (vTotTrib, ICMS, IPI, PIS, COFINS)>
 <!ELEMENT vTotTrib (#PCDATA)>
 <!ELEMENT ICMS (ICMS00)>
 <!ELEMENT ICMS00 (orig, CST, modBC, vBC, pICMS, vICMS)>
@@ -91,6 +91,7 @@
 <!ELEMENT vBC (#PCDATA)>
 <!ELEMENT pICMS (#PCDATA)>
 <!ELEMENT vICMS (#PCDATA)>
+<!ELEMENT cEnq (#PCDATA)>
 
 <!ELEMENT PIS (PISOutr)>
 <!ELEMENT PISOutr (CST, vBC, pPIS, vPIS)>
@@ -102,25 +103,21 @@
 <!ELEMENT vAliqProd (#PCDATA)>
 <!ELEMENT vCOFINS (#PCDATA)>
 
-<!ELEMENT total (ICMSTot)>
-<!ELEMENT ICMSTot (vBC, vICMS, vICMSDeson, vFCP, vBCST, vST, vFCPST, vFCPSTRet, vProd, vFrete, vSeg, vDesc, vII, vIPI, vIPIDevol, vPIS, vCOFINS, vOutro, vNF, vTotTrib)>
-<!ELEMENT vICMSDeson (#PCDATA)>
-<!ELEMENT vFCP (#PCDATA)>
-<!ELEMENT vBCST (#PCDATA)>
-<!ELEMENT vST (#PCDATA)>
-<!ELEMENT vFCPST (#PCDATA)>
-<!ELEMENT vFCPSTRet (#PCDATA)>
-<!ELEMENT vFrete (#PCDATA)>
-<!ELEMENT vSeg (#PCDATA)>
-<!ELEMENT vDesc (#PCDATA)>
-<!ELEMENT vII (#PCDATA)>
-<!ELEMENT vIPI (#PCDATA)>
-<!ELEMENT vIPIDevol (#PCDATA)>
-<!ELEMENT vOutro (#PCDATA)>
-<!ELEMENT vNF (#PCDATA)>
+<!ELEMENT IPI (cEnq, IPINT)>
+<!ELEMENT IPINT (CST)>
 
-<!ELEMENT transp (modFrete)>
+
+<!ELEMENT total (ICMSTot)>
+<!ELEMENT ICMSTot (vBC, vICMS, vProd, vIPI, vPIS, vCOFINS, vNF, vTotTrib)>
+
+<!ELEMENT vIPI (#PCDATA)>
+<!ELEMENT vNF (#PCDATA)>
+<!ELEMENT xEnder (#PCDATA)>
+
+<!ELEMENT transp (modFrete, transporta)>
 <!ELEMENT modFrete (#PCDATA)>
+
+<!ELEMENT transporta (CNPJ, xNome, IE, xEnder, xMun, UF)>
 
 <!ELEMENT cobr (fat)>
 <!ELEMENT fat (nFat, vOrig, vLiq)>
@@ -128,7 +125,7 @@
 <!ELEMENT vOrig (#PCDATA)>
 <!ELEMENT vLiq (#PCDATA)>
 
-<!ELEMENT pag (detPag, vTroco)>
+<!ELEMENT pag (detPag, vTroco?)>
 <!ELEMENT detPag (indPag, tPag, vPag)>
 <!ELEMENT indPag (#PCDATA)>
 <!ELEMENT tPag (#PCDATA)>

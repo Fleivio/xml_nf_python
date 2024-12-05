@@ -1,0 +1,150 @@
+{% extends "base.html" %} {% block title %}Nota Fiscal{% endblock %}
+
+{% block pg_title %}
+<p class="h3 text-muted">Nota Fiscal</p>
+{% endblock %}
+
+{% block additional_info %}
+{% endblock %}
+
+{%block content%}
+
+<div class="container mt-4">
+  <h1 class="text-center">Emissão de Nota Fiscal</h1>
+  
+  <!-- Emissão -->
+  <h2>Emissor</h2>
+  <table class="table table-bordered">
+      <tr>
+          <th>CNPJ</th>
+          <td>{{ emissao.emit.CNPJ }}</td>
+      </tr>
+      <tr>
+          <th>Nome</th>
+          <td>{{ emissao.emit.xNome }}</td>
+      </tr>
+      <tr>
+          <th>Endereço</th>
+          <td>{{ emissao.emit.enderEmit.xLgr }}, {{ emissao.emit.enderEmit.nro }} - {{ emissao.emit.enderEmit.xBairro }}, {{ emissao.emit.enderEmit.xMun }} ({{ emissao.emit.enderEmit.UF }}), CEP: {{ emissao.emit.enderEmit.CEP }}</td>
+      </tr>
+      <tr>
+          <th>Telefone</th>
+          <td>{{ emissao.emit.enderEmit.fone }}</td>
+      </tr>
+  </table>
+
+  <h2>Destinatário</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>CPF</th>
+            <td>{{ destinatario.dest.CPF }}</td>
+        </tr>
+        <tr>
+            <th>Nome</th>
+            <td>{{ destinatario.dest.xNome }}</td>
+        </tr>
+        <tr>
+            <th>Endereço</th>
+            <td>{{ destinatario.dest.enderDest.xLgr }}, {{ destinatario.dest.enderDest.nro }} - {{ destinatario.dest.enderDest.xBairro }}, {{ destinatario.dest.enderDest.xMun }} ({{ destinatario.dest.enderDest.UF }}), CEP: {{ destinatario.dest.enderDest.CEP }}</td>
+        </tr>
+        <tr>
+            <th>Telefone</th>
+            <td>{{ destinatario.dest.enderDest.fone }}</td>
+        </tr>
+        <tr>
+            <th>Indicação de IE</th>
+            <td>{{ destinatario.dest.indIEDest }}</td>
+        </tr>
+    </table>
+
+    <h2>Entrega</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>CPF</th>
+            <td>{{ entrega.entrega.CPF }}</td>
+        </tr>
+        <tr>
+            <th>Nome</th>
+            <td>{{ entrega.entrega.xNome }}</td>
+        </tr>
+        <tr>
+            <th>Endereço</th>
+            <td>{{ entrega.entrega.xLgr }}, {{ entrega.entrega.nro }} - {{ entrega.entrega.xBairro }}, {{ entrega.entrega.xMun }} ({{ entrega.entrega.UF }}), CEP: {{ entrega.entrega.CEP }}</td>
+        </tr>
+    </table>
+
+    <h2>Produtos</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Unitário</th>
+                <th>Valor Total</th>
+                <th>Impostos</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for produto in prods %}
+            <tr>
+                <td>{{ produto.det.prod.xProd }}</td>
+                <td>{{ produto.det.prod.qCom }}</td>
+                <td>R$ {{ produto.det.prod.vUnCom }}</td>
+                <td>R$ {{ produto.det.prod.vProd }}</td>
+                <td>
+                    <strong>ICMS:</strong> R$ {{ produto.det.imposto.ICMS.ICMS00.vICMS }}<br>
+                    <strong>PIS:</strong> R$ {{ produto.det.imposto.PIS.PISOutr.vPIS }}<br>
+                    <strong>IPI:</strong> R$0 <br>
+                    <strong>COFINS:</strong> R$ {{ produto.det.imposto.COFINS.COFINSOutr.vCOFINS }}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    <table class="table table-bordered">
+            <tr>
+                <th>Valor Base</th>
+                <td>R$ {{ tributacao.ICMSTot.vBC }}</td>
+            </tr>
+            <tr>
+                <th>Valor ICMS</th>
+                <td>R$ {{ tributacao.ICMSTot.vICMS }}</td>
+            </tr>
+            <tr>
+                <th>Valor IPI</th>
+                <td>R$ {{ tributacao.ICMSTot.vIPI }}</td>
+            </tr>
+            <tr>
+                <th>Valor PIS</th>
+                <td>R$ {{ tributacao.ICMSTot.vPIS }}</td>
+            </tr>
+            <tr>
+                <th>Valor COFINS</th>
+                <td>R$ {{ tributacao.ICMSTot.vCOFINS }}</td>
+            </tr>
+            <tr>
+                <th>Valor Total</th>
+                <td>R$ {{ tributacao.ICMSTot.vTotTrib }}</td>
+            </tr>
+        </table>
+    </table>
+
+    <h2>Transportadora</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>CNPJ</th>
+            <td>{{ transportadora.transporta.CNPJ }}</td>
+        </tr>
+        <tr>
+            <th>Nome</th>
+            <td>{{ transportadora.transporta.xNome }}</td>
+        </tr>
+        <tr>
+            <th>Endereço</th>
+            <td>{{ transportadora.transporta.xEnder }}, {{ transportadora.transporta.xMun }} ({{ transportadora.transporta.UF }})</td>
+        </tr>
+    </table>
+
+</div>
+
+{% endblock %}

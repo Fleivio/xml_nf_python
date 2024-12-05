@@ -4,198 +4,144 @@
     <infNFe Id="NFe43240837916119000119550010000000061004500991" versao="4.00">
       <!-- identificacao -->
       <ide>
-        <cUF>cuf</cUF>
-        <cNF>cnf</cNF>
-        <natOp>natop</natOp>
-        <mod>mod</mod>
-        <serie>seriw</serie>
-        <nNF>nnf</nNF>
-        <dhEmi>dhEmi</dhEmi>
-        <tpNF>tpnf</tpNF>
-        <idDest>iddest</idDest>
-        <cMunFG>cmunfg</cMunFG>
-        <tpImp>tpimp</tpImp>
-        <tpEmis>tpemis</tpEmis>
-        <cDV>cdv</cDV>
-        <tpAmb>tpamb</tpAmb>
-        <finNFe>finnfe</finNFe>
-        <indFinal>indfinal</indFinal>
-        <indPres>indpres</indPres>
-        <indIntermed>indintermed</indIntermed>
-        <procEmi>procemi</procEmi>
-        <verProc>veroproc</verProc>
+        <cUF>43</cUF>
+        <cNF>random</cNF>
+        <natOp>Venda de merc adquirida ou recebida de terceiros</natOp>
+        <mod>65</mod>
+        <serie>1</serie>
+        <nNF>random</nNF>
+        <dhEmi>data de emissão</dhEmi>
+        <tpNF>1</tpNF>
+        <idDest>1</idDest>
+        <cMunFG>4315149</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>1</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>1</finNFe>
+        <indFinal>1</indFinal>
+        <indPres>1</indPres>
+        <indIntermed>0</indIntermed>
+        <procEmi>0</procEmi>
+        <verProc>1</verProc>
       </ide>
       <!-- emissor -->
       <emit>
-        <CNPJ>cnpj</CNPJ>
-        <xNome>xnome</xNome>
+        <CNPJ>XX. XXX. XXX/0001-XX</CNPJ>
+        <xNome>Nome</xNome>
         <enderEmit>
-          <xLgr>xlgr</xLgr>
-          <nro>nro</nro>
-          <xBairro>xbairro</xBairro>
-          <cMun>cmun</cMun>
-          <xMun>xmun</xMun>
-          <UF>uf</UF>
-          <CEP>cep</CEP>
-          <cPais>cpais</cPais>
-          <xPais>xpais</xPais>
+          <xLgr>Logradouro</xLgr>
+          <nro>Número</nro>
+          <xBairro>Bairro</xBairro>
+          <cMun>Codigo do Minicipio</cMun>
+          <xMun>Municipio</xMun>
+          <UF>Unidade Federativa</UF>
+          <CEP>CEP</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
           <fone>fone</fone>
         </enderEmit>
-        <IE>ie</IE>
-        <CRT>crt</CRT>
+        <IE>random</IE>
+        <CRT>3</CRT>
       </emit>
       <!-- destinatario -->
       <dest>
-        <CPF>cpf</CPF>
-        <xNome>xnome</xNome>
+        <CPF>CPF</CPF>
+        <xNome>Nome</xNome>
         <enderDest>
-          <xLgr>xlgr</xLgr>
-          <nro>nro</nro>
-          <xBairro>xbairro</xBairro>
-          <cMun>cmun</cMun>
-          <xMun>xmun</xMun>
-          <UF>uf</UF>
-          <CEP>cep</CEP>
-          <cPais>cpais</cPais>
-          <xPais>xpais</xPais>
+          <xLgr>Logradouro</xLgr>
+          <nro>Numero</nro>
+          <xBairro>Bairro</xBairro>
+          <cMun>Codigo do Municipio</cMun>
+          <xMun>Municipio</xMun>
+          <UF>Unidade Federativa</UF>
+          <CEP>CEP</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
           <fone>fone</fone>
         </enderDest>
-        <indIEDest>indiedest</indIEDest>
+        <indIEDest>9</indIEDest>
       </dest>
 
       <!-- entrega -->
       <entrega>
-        <CPF>cpf</CPF>
-        <xNome>xnome</xNome>
-        <xLgr>xlgr</xLgr>
-        <nro>nro</nro>
-        <xBairro>xbairro</xBairro>
-        <cMun>cmun</cMun>
-        <xMun>xmun</xMun>
-        <UF>uf</UF>
-        <CEP>cep</CEP>
-        <cPais>cpais</cPais>
-        <xPais>cpais</xPais>
+        <CPF>CPF</CPF>
+        <xNome>Nome</xNome>
+        <xLgr>Logradouro</xLgr>
+        <nro>Numero</nro>
+        <xBairro>Brairro</xBairro>
+        <cMun>Codigo do Municipio</cMun>
+        <xMun>Municipio</xMun>
+        <UF>Unidade Federativa</UF>
+        <CEP>CEP</CEP>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
       </entrega>
 
       <!-- item -->
       <det nItem="1">
         <prod>
-          <cProd>cprod</cProd>
-          <cEAN>cean</cEAN>
-          <xProd>xprod</xProd>
-          <NCM>ncm</NCM>
-          <CFOP>cfop</CFOP>
-          <uCom>ucom</uCom>
-          <qCom>qcom</qCom>
-          <vUnCom>vuncom</vUnCom>
-          <vProd>vprod</vProd>
-          <cEANTrib>ceantrib</cEANTrib>
-          <uTrib>utrib</uTrib>
-          <qTrib>qtrib</qTrib>
-          <vUnTrib>vuntrib</vUnTrib>
-          <indTot>indtot</indTot>
+          <cProd>random</cProd>
+          <cEAN>random</cEAN>
+          <xProd>Nome do Produto</xProd>
+          <NCM>random</NCM>
+          <CFOP>random</CFOP>
+          <uCom>UN (unidade)</uCom>
+          <qCom>quantidade (1)</qCom>
+          <vUnCom>valor unitário</vUnCom>
+          <vProd>valor total</vProd>
+          <cEANTrib>random</cEANTrib>
+          <uTrib>UN (unidade)</uTrib>
+          <qTrib>1</qTrib>
+          <vUnTrib>valor unitário (campo inutil)</vUnTrib>
+          <indTot>1 (indica que compoe o valor total da nf)</indTot>
         </prod>
         <imposto>
-          <vTotTrib>vtottrib</vTotTrib>
+          <vTotTrib>Valor total dos tributos</vTotTrib>
           <ICMS>
             <ICMS00>
-              <orig>orig</orig>
-              <CST>cst</CST>
-              <modBC>mobbc</modBC>
-              <vBC>vbc</vBC>
-              <pICMS>picms</pICMS>
-              <vICMS>vicms</vICMS>
+              <orig>1</orig>
+              <CST>0</CST>
+              <modBC>3</modBC>
+              <vBC>valor sobre o qual será aplicado(do produto)</vBC>
+              <pICMS>porcentagem aplicada</pICMS>
+              <vICMS>valor devido</vICMS>
             </ICMS00>
           </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>53</CST>
+            </IPINT>
+          </IPI>
           <PIS>
             <PISOutr>
-              <CST>cst</CST>
-              <vBC>vbc</vBC>
-              <pPIS>ppis</pPIS>
-              <vPIS>vpis</vPIS>
+              <CST>0</CST>
+              <vBC>valor sobre o qual será aplicado(do produto)</vBC>
+              <pPIS>porcentagem aplicada</pPIS>
+              <vPIS>valor devido</vPIS>
             </PISOutr>
           </PIS>
           <COFINS>
             <COFINSOutr>
-              <CST>cst</CST>
-              <qBCProd>qbcprod</qBCProd>
-              <vAliqProd>valiqprod</vAliqProd>
-              <vCOFINS>vconfins</vCOFINS>
+              <CST>0</CST>
+              <qBCProd>quantidaded de produtos</qBCProd>
+              <vAliqProd>aliquota por unidade</vAliqProd>
+              <vCOFINS>valor devido</vCOFINS>
             </COFINSOutr>
           </COFINS>
         </imposto>
       </det>
 
-      <det nItem="1">
-        <prod>
-          <cProd>cprod</cProd>
-          <cEAN>cean</cEAN>
-          <xProd>xprod</xProd>
-          <NCM>ncm</NCM>
-          <CFOP>cfop</CFOP>
-          <uCom>ucom</uCom>
-          <qCom>qcom</qCom>
-          <vUnCom>vuncom</vUnCom>
-          <vProd>vprod</vProd>
-          <cEANTrib>ceantrib</cEANTrib>
-          <uTrib>utrib</uTrib>
-          <qTrib>qtrib</qTrib>
-          <vUnTrib>vuntrib</vUnTrib>
-          <indTot>indtot</indTot>
-        </prod>
-        <imposto>
-          <vTotTrib>vtottrib</vTotTrib>
-          <ICMS>
-            <ICMS00>
-              <orig>orig</orig>
-              <CST>cst</CST>
-              <modBC>mobbc</modBC>
-              <vBC>vbc</vBC>
-              <pICMS>picms</pICMS>
-              <vICMS>vicms</vICMS>
-            </ICMS00>
-          </ICMS>
-          <PIS>
-            <PISOutr>
-              <CST>cst</CST>
-              <vBC>vbc</vBC>
-              <pPIS>ppis</pPIS>
-              <vPIS>vpis</vPIS>
-            </PISOutr>
-          </PIS>
-          <COFINS>
-            <COFINSOutr>
-              <CST>cst</CST>
-              <qBCProd>qbcprod</qBCProd>
-              <vAliqProd>valiqprod</vAliqProd>
-              <vCOFINS>vconfins</vCOFINS>
-            </COFINSOutr>
-          </COFINS>
-        </imposto>
-      </det>
-      
       <!-- total -->
       <total>
         <ICMSTot>
           <vBC>vbc</vBC>
           <vICMS>vicms</vICMS>
-          <vICMSDeson>vicmsdeson</vICMSDeson>
-          <vFCP>vfcp</vFCP>
-          <vBCST>vbcst</vBCST>
-          <vST>vst</vST>
-          <vFCPST>vfcpst</vFCPST>
-          <vFCPSTRet>vfcpstret</vFCPSTRet>
           <vProd>vprod</vProd>
-          <vFrete>vfrete</vFrete>
-          <vSeg>vseg</vSeg>
-          <vDesc>vdesc</vDesc>
-          <vII>vii</vII>
           <vIPI>vipi</vIPI>
-          <vIPIDevol>vipidevol</vIPIDevol>
           <vPIS>vpis</vPIS>
           <vCOFINS>vcofins</vCOFINS>
-          <vOutro>voutro</vOutro>
           <vNF>vnf</vNF>
           <vTotTrib>vtottrib</vTotTrib>
         </ICMSTot>
@@ -203,31 +149,24 @@
 
       <!-- transportadora -->
       <transp>
-        <modFrete>modfrete</modFrete>
+        <modFrete>0</modFrete>
+        <transporta>
+          <CNPJ>CNPJ</CNPJ>
+          <xNome>Nome da Transportadora</xNome>
+          <IE>random</IE>
+          <xEnder>logradouro</xEnder>
+          <xMun>municipio</xMun>
+          <UF>unidade federativa</UF>
+        </transporta>
       </transp>
 
       <pag>
         <detPag>
-          <indPag>indpag</indPag>
-          <tPag>tpag</tPag>
-          <vPag>vpag</vPag>
+          <indPag>0</indPag>
+          <tPag>03</tPag>
+          <vPag>Valor pago</vPag>
         </detPag>
-        <vTroco>vtroco</vTroco>
       </pag>
-
-      <infAdic>
-        <infCpl>infcpl</infCpl>
-        <obsCont xCampo="Pedido">
-          <xTexto>xtexto</xTexto>
-        </obsCont>
-      </infAdic>
-
-      <infRespTec>
-        <CNPJ>cnpj</CNPJ>
-        <xContato>xcontato</xContato>
-        <email>email</email>
-        <fone>fone</fone>
-      </infRespTec>
 
     </infNFe>
   </NFe>

@@ -1,11 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask App</title>
-</head>
-<body>
-    <h1>Welcome to Flask!</h1>
-</body>
-</html>
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+{% block pg_title %}
+<p class="h3 text-muted">Visualização de Notas Fiscais</p>
+{% endblock %}
+
+{% block additional_info %}
+<span>Total de notas fiscais: {{ notas|length }}</span>
+{% endblock %}
+
+{%block content%}
+<br />
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Número</th>
+      <th scope="col">Número de Produtos</th>
+      <th scope="col">Valor Total (R$)</th>
+      <th scope="col">Valor Total de Impostos (R$)</th>
+      <th scope="col">Fornecedor</th>
+      <th scope="col">Transportadora</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for nota in notas %}
+    <tr>
+      <td><a href="{{ nota._path }}" target="_blank">{{loop.index}}</a></td>
+      <td>{{ nota.nfeProc.NFe.infNFe.det | length }}</td>
+      <td>{{ nota.nfeProc.NFe.infNFe.total.ICMSTot.vProd }}</td>
+      <td>{{ nota.nfeProc.NFe.infNFe.total.ICMSTot.vTotTrib }}</td>
+      <td>{{ nota.nfeProc.NFe.infNFe.emit.xNome }}</td>
+      <td>{{ nota.nfeProc.NFe.infNFe.transp.transporta.xNome }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

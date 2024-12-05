@@ -141,6 +141,7 @@
     <xs:sequence>
       <xs:element name="vTotTrib" type="xs:string"/>
       <xs:element name="ICMS" type="ICMSType"/>
+      <xs:element name="IPI" type="IPIType"/>
       <xs:element name="PIS" type="PISType"/>
       <xs:element name="COFINS" type="COFINSType"/>
     </xs:sequence>
@@ -149,6 +150,19 @@
   <xs:complexType name="ICMSType">
     <xs:sequence>
       <xs:element name="ICMS00" type="ICMS00Type"/>
+    </xs:sequence>
+  </xs:complexType>
+
+    <xs:complexType name="IPIType">
+    <xs:sequence>
+      <xs:element name="cEnq" type="xs:string"/>
+      <xs:element name="IPINT" type="IPINTType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="IPINTType">
+    <xs:sequence>
+      <xs:element name="CST" type="xs:string"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -203,22 +217,10 @@
     <xs:sequence>
       <xs:element name="vBC" type="xs:string"/>
       <xs:element name="vICMS" type="xs:string"/>
-      <xs:element name="vICMSDeson" type="xs:string"/>
-      <xs:element name="vFCP" type="xs:string"/>
-      <xs:element name="vBCST" type="xs:string"/>
-      <xs:element name="vST" type="xs:string"/>
-      <xs:element name="vFCPST" type="xs:string"/>
-      <xs:element name="vFCPSTRet" type="xs:string"/>
       <xs:element name="vProd" type="xs:string"/>
-      <xs:element name="vFrete" type="xs:string"/>
-      <xs:element name="vSeg" type="xs:string"/>
-      <xs:element name="vDesc" type="xs:string"/>
-      <xs:element name="vII" type="xs:string"/>
       <xs:element name="vIPI" type="xs:string"/>
-      <xs:element name="vIPIDevol" type="xs:string"/>
       <xs:element name="vPIS" type="xs:string"/>
       <xs:element name="vCOFINS" type="xs:string"/>
-      <xs:element name="vOutro" type="xs:string"/>
       <xs:element name="vNF" type="xs:string"/>
       <xs:element name="vTotTrib" type="xs:string"/>
     </xs:sequence>
@@ -227,6 +229,18 @@
   <xs:complexType name="transpType">
     <xs:sequence>
       <xs:element name="modFrete" type="xs:string"/>
+      <xs:element name="transporta" type="transportaType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="transportaType">
+    <xs:sequence>
+      <xs:element name="CNPJ" type="xs:string"/>
+      <xs:element name="xNome" type="xs:string"/>
+      <xs:element name="IE" type="xs:string"/>
+      <xs:element name="xEnder" type="xs:string"/>
+      <xs:element name="xMun" type="xs:string"/>
+      <xs:element name="UF" type="xs:string"/>
     </xs:sequence>
   </xs:complexType>
 
