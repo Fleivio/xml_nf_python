@@ -5,7 +5,7 @@
       <!-- identificacao -->
       <ide>
         <cUF>43</cUF>
-        <cNF>4</cNF>
+        <cNF>6</cNF>
         <natOp>Venda de merc adquirida ou recebida de terceiros</natOp>
         <mod>65</mod>
         <serie>1</serie>
@@ -82,14 +82,14 @@
       <!-- total -->
       <total>
         <ICMSTot>
-          <vBC>400.00</vBC>
-          <vICMS>54.00</vICMS>
-          <vProd>300.00</vProd>
+          <vBC>20.00</vBC>
+          <vICMS>2.00</vICMS>
+          <vProd>20.00</vProd>
           <vIPI>0.00</vIPI>
           <vPIS>0.00</vPIS>
-          <vCOFINS>5.00</vCOFINS>
-          <vNF>400.00</vNF>
-          <vTotTrib>54.00</vTotTrib>
+          <vCOFINS>0.00</vCOFINS>
+          <vNF>20.00</vNF>
+          <vTotTrib>2.00</vTotTrib>
         </ICMSTot>
       </total>
 
@@ -97,12 +97,12 @@
       <transp>
         <modFrete>0</modFrete>
         <transporta>
-          <CNPJ>02. 034. 011/0001-00</CNPJ>
-          <xNome>FEDEX</xNome>
+          <CNPJ>33. 340. 000/0001-00</CNPJ>
+          <xNome>Correios</xNome>
           <IE>random</IE>
-          <xEnder>RSC-287</xEnder>
+          <xEnder>Venâncio Aires, 1742</xEnder>
           <xMun>Santa Maria</xMun>
-          <UF>Rio Grande do Sul</UF>
+          <UF>RS</UF>
         </transporta>
       </transp>
 
@@ -114,71 +114,17 @@
         </detPag>
       </pag>
 
-    <det nItem="2">
-        <prod>
-          <cProd>001</cProd>
-          <cEAN>1234567890123</cEAN>
-          <xProd>Produto A</xProd>
-          <NCM>12345678</NCM>
-          <CFOP>5102</CFOP>
-          <uCom>UN</uCom>
-          <qCom>2</qCom>
-          <vUnCom>50.00</vUnCom>
-          <vProd>100.00</vProd>
-          <cEANTrib>1234567890123</cEANTrib>
-          <uTrib>UN</uTrib>
-          <qTrib>2</qTrib>
-          <vUnTrib>50.00</vUnTrib>
-          <indTot>1</indTot>
-        </prod>
-        <imposto>
-          <vTotTrib>20</vTotTrib>
-          <ICMS>
-            <ICMS00>
-              <orig>1</orig>
-              <CST>0</CST>
-              <modBC>3</modBC>
-              <vBC>20</vBC>
-              <pICMS>17</pICMS>
-              <vICMS>3.4</vICMS>
-            </ICMS00>
-          </ICMS>
-          <IPI>
-            <cEnq>999</cEnq>
-            <IPINT>
-              <CST>53</CST>
-            </IPINT>
-          </IPI>
-          <PIS>
-            <PISOutr>
-              <CST>0</CST>
-              <vBC>20</vBC>
-              <pPIS>2</pPIS>
-              <vPIS>0.4</vPIS>
-            </PISOutr>
-          </PIS>
-          <COFINS>
-            <COFINSOutr>
-              <CST>0</CST>
-              <qBCProd>0</qBCProd>
-              <vAliqProd>0</vAliqProd>
-              <vCOFINS>0</vCOFINS>
-            </COFINSOutr>
-          </COFINS>
-        </imposto>
-      </det>
-
-      <det nItem="1">
+    <det nItem="1">
         <prod>
           <cProd>002</cProd>
           <cEAN>00000000000</cEAN>
-          <xProd>Produto B</xProd>
+          <xProd>Produto D</xProd>
           <NCM>87654321</NCM>
           <CFOP>5102</CFOP>
           <uCom>UN</uCom>
           <qCom>1</qCom>
-          <vUnCom>200.00</vUnCom>
-          <vProd>200.00</vProd>
+          <vUnCom>20.00</vUnCom>
+          <vProd>20.00</vProd>
           <cEANTrib>00000000000</cEANTrib>
           <uTrib>UN</uTrib>
           <qTrib>1</qTrib>
@@ -222,59 +168,6 @@
         </imposto>
       </det>
 
-      <det nItem="3">
-        <prod>
-          <cProd>001</cProd>
-          <cEAN>1234567890123</cEAN>
-          <xProd>Produto C</xProd>
-          <NCM>12345678</NCM>
-          <CFOP>5102</CFOP>
-          <uCom>UN</uCom>
-          <qCom>2</qCom>
-          <vUnCom>50.00</vUnCom>
-          <vProd>100.00</vProd>
-          <cEANTrib>1234567890123</cEANTrib>
-          <uTrib>UN</uTrib>
-          <qTrib>2</qTrib>
-          <vUnTrib>50.00</vUnTrib>
-          <indTot>1</indTot>
-        </prod>
-        <imposto>
-          <vTotTrib>20</vTotTrib>
-          <ICMS>
-            <ICMS00>
-              <orig>1</orig>
-              <CST>0</CST>
-              <modBC>3</modBC>
-              <vBC>20</vBC>
-              <pICMS>17</pICMS>
-              <vICMS>3.4</vICMS>
-            </ICMS00>
-          </ICMS>
-          <IPI>
-            <cEnq>999</cEnq>
-            <IPINT>
-              <CST>53</CST>
-            </IPINT>
-          </IPI>
-          <PIS>
-            <PISOutr>
-              <CST>0</CST>
-              <vBC>20</vBC>
-              <pPIS>2</pPIS>
-              <vPIS>0.4</vPIS>
-            </PISOutr>
-          </PIS>
-          <COFINS>
-            <COFINSOutr>
-              <CST>0</CST>
-              <qBCProd>0</qBCProd>
-              <vAliqProd>0</vAliqProd>
-              <vCOFINS>0</vCOFINS>
-            </COFINSOutr>
-          </COFINS>
-        </imposto>
-      </det>
 
       </infNFe>
   </NFe>

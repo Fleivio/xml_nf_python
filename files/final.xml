@@ -224,6 +224,59 @@
     <prod>
           <cProd>002</cProd>
           <cEAN>00000000000</cEAN>
+          <xProd>Produto D</xProd>
+          <NCM>87654321</NCM>
+          <CFOP>5102</CFOP>
+          <uCom>UN</uCom>
+          <qCom>1</qCom>
+          <vUnCom>20.00</vUnCom>
+          <vProd>20.00</vProd>
+          <cEANTrib>00000000000</cEANTrib>
+          <uTrib>UN</uTrib>
+          <qTrib>1</qTrib>
+          <vUnTrib>200.00</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+    <imposto>
+          <vTotTrib>20</vTotTrib>
+          <ICMS>
+            <ICMS00>
+              <orig>1</orig>
+              <CST>0</CST>
+              <modBC>3</modBC>
+              <vBC>20</vBC>
+              <pICMS>17</pICMS>
+              <vICMS>3.4</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <cEnq>999</cEnq>
+            <IPINT>
+              <CST>53</CST>
+            </IPINT>
+          </IPI>
+          <PIS>
+            <PISOutr>
+              <CST>0</CST>
+              <vBC>20</vBC>
+              <pPIS>2</pPIS>
+              <vPIS>0.4</vPIS>
+            </PISOutr>
+          </PIS>
+          <COFINS>
+            <COFINSOutr>
+              <CST>0</CST>
+              <qBCProd>0</qBCProd>
+              <vAliqProd>0</vAliqProd>
+              <vCOFINS>0</vCOFINS>
+            </COFINSOutr>
+          </COFINS>
+        </imposto>
+  </det>
+<det>
+    <prod>
+          <cProd>002</cProd>
+          <cEAN>00000000000</cEAN>
           <xProd>One Piece Vol. 104</xProd>
           <NCM>87654321</NCM>
           <CFOP>5102</CFOP>
@@ -485,7 +538,7 @@
           </COFINS>
         </imposto>
   </det>
-<det>
+  <det>
     <prod>
           <cProd>002</cProd>
           <cEAN>00000000000</cEAN>
