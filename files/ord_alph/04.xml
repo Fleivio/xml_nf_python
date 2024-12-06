@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <nfeProc versao="4.00">
   <NFe>
     <infNFe Id="NFe43240837916119000119550010000000061004500991" versao="4.00">
@@ -78,11 +78,47 @@
         <xPais>BRASIL</xPais>
       </entrega>
 
-      <det nItem="2">
+      <!-- item -->
+      <!-- total -->
+      <total>
+        <ICMSTot>
+          <vBC>300.00</vBC>
+          <vICMS>54.00</vICMS>
+          <vProd>300.00</vProd>
+          <vIPI>0.00</vIPI>
+          <vPIS>0.00</vPIS>
+          <vCOFINS>5.00</vCOFINS>
+          <vNF>300.00</vNF>
+          <vTotTrib>54.00</vTotTrib>
+        </ICMSTot>
+      </total>
+
+      <!-- transportadora -->
+      <transp>
+        <modFrete>0</modFrete>
+        <transporta>
+          <CNPJ>02. 034. 011/0001-00</CNPJ>
+          <xNome>FEDEX</xNome>
+          <IE>random</IE>
+          <xEnder>RSC-287</xEnder>
+          <xMun>Santa Maria</xMun>
+          <UF>Rio Grande do Sul</UF>
+        </transporta>
+      </transp>
+
+      <pag>
+        <detPag>
+          <indPag>0</indPag>
+          <tPag>03</tPag>
+          <vPag>Valor pago</vPag>
+        </detPag>
+      </pag>
+
+    <det nItem="2">
         <prod>
           <cProd>001</cProd>
           <cEAN>1234567890123</cEAN>
-          <xProd>Produto C</xProd>
+          <xProd>Produto A</xProd>
           <NCM>12345678</NCM>
           <CFOP>5102</CFOP>
           <uCom>UN</uCom>
@@ -132,8 +168,6 @@
         </imposto>
       </det>
 
-
-      <!-- item -->
       <det nItem="1">
         <prod>
           <cProd>002</cProd>
@@ -192,7 +226,7 @@
         <prod>
           <cProd>001</cProd>
           <cEAN>1234567890123</cEAN>
-          <xProd>Produto A</xProd>
+          <xProd>Produto C</xProd>
           <NCM>12345678</NCM>
           <CFOP>5102</CFOP>
           <uCom>UN</uCom>
@@ -242,41 +276,7 @@
         </imposto>
       </det>
 
-      <!-- total -->
-      <total>
-        <ICMSTot>
-          <vBC>300.00</vBC>
-          <vICMS>54.00</vICMS>
-          <vProd>300.00</vProd>
-          <vIPI>0.00</vIPI>
-          <vPIS>0.00</vPIS>
-          <vCOFINS>5.00</vCOFINS>
-          <vNF>300.00</vNF>
-          <vTotTrib>54.00</vTotTrib>
-        </ICMSTot>
-      </total>
 
-      <!-- transportadora -->
-      <transp>
-        <modFrete>0</modFrete>
-        <transporta>
-          <CNPJ>02. 034. 011/0001-00</CNPJ>
-          <xNome>FEDEX</xNome>
-          <IE>random</IE>
-          <xEnder>RSC-287</xEnder>
-          <xMun>Santa Maria</xMun>
-          <UF>Rio Grande do Sul</UF>
-        </transporta>
-      </transp>
-
-      <pag>
-        <detPag>
-          <indPag>0</indPag>
-          <tPag>03</tPag>
-          <vPag>Valor pago</vPag>
-        </detPag>
-      </pag>
-
-    </infNFe>
+      </infNFe>
   </NFe>
 </nfeProc>

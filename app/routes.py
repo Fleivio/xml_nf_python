@@ -114,3 +114,11 @@ def all_prods():
 @main.route('/prods/nfs/<nfe>')
 def nf_prods(nfe):
     return send_file(root_dir + '/files/prods/' + nfe)
+
+@main.route('/ord_alph/nfs/<nfe>')
+def nf_ord_alph(nfe):
+    return send_file(root_dir + '/files/ord_alph/' + nfe)
+
+@main.route('/final')
+def nf_final():
+    return send_file(root_dir + '/files/final.xml')
