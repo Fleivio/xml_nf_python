@@ -1,7 +1,8 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, jsonify
 import os
-from app.src.tojson import read_as_dict
+from app.src.tojson import read_as_dict, to_json
 from lxml import etree
+
 
 main = Blueprint('main', __name__)
 
@@ -26,8 +27,6 @@ def nf_view(nfe):
     prods = read_as_dict(nf_name, '/nfeProc/NFe/infNFe/det')
     tributacao = read_as_dict(nf_name, '/nfeProc/NFe/infNFe/total/ICMSTot')[0]
     transportadora = read_as_dict(nf_name, '/nfeProc/NFe/infNFe/transp/transporta')[0]
-
-    print(prods)
 
     return render_template('nf.html',
                             emissao=emissao,
@@ -105,3 +104,8 @@ def transportadoras():
 
 
     return render_template('transportadoras.html', transportadoras = transportadoras)
+
+@main.route('/as_json/nfs/<nfe>')
+def nf_json(nfe):
+    dict = read_as_dict(f'{nf_directory}/{nfe}')
+    return jsonify(dict)

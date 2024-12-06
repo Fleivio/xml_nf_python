@@ -83,13 +83,13 @@
         <prod>
           <cProd>002</cProd>
           <cEAN>00000000000</cEAN>
-          <xProd>Produto B</xProd>
+          <xProd>Produto C</xProd>
           <NCM>87654321</NCM>
           <CFOP>5102</CFOP>
           <uCom>UN</uCom>
           <qCom>1</qCom>
-          <vUnCom>200.00</vUnCom>
-          <vProd>200.00</vProd>
+          <vUnCom>50.00</vUnCom>
+          <vProd>50.00</vProd>
           <cEANTrib>00000000000</cEANTrib>
           <uTrib>UN</uTrib>
           <qTrib>1</qTrib>
@@ -137,14 +137,14 @@
       <!-- total -->
       <total>
         <ICMSTot>
-          <vBC>300.00</vBC>
-          <vICMS>54.00</vICMS>
-          <vProd>300.00</vProd>
-          <vIPI>0</vIPI>
-          <vPIS>0</vPIS>
-          <vCOFINS>0</vCOFINS>
-          <vNF>300.00</vNF>
-          <vTotTrib>600.00</vTotTrib>
+          <vBC>50.00</vBC>
+          <vICMS>4.00</vICMS>
+          <vProd>50.00</vProd>
+          <vIPI>0.00</vIPI>
+          <vPIS>1.00</vPIS>
+          <vCOFINS>0.00</vCOFINS>
+          <vNF>50.00</vNF>
+          <vTotTrib>5.00</vTotTrib>
         </ICMSTot>
       </total>
 
@@ -152,12 +152,12 @@
       <transp>
         <modFrete>0</modFrete>
         <transporta>
-          <CNPJ>CNPJ</CNPJ>
-          <xNome>Nome da Transportadora</xNome>
+          <CNPJ>33. 340. 000/0001-00</CNPJ>
+          <xNome>Correios</xNome>
           <IE>random</IE>
-          <xEnder>logradouro</xEnder>
-          <xMun>municipio</xMun>
-          <UF>unidade federativa</UF>
+          <xEnder>Venâncio Aires, 1742</xEnder>
+          <xMun>Santa Maria</xMun>
+          <UF>RS</UF>
         </transporta>
       </transp>
 

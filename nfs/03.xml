@@ -83,21 +83,21 @@
         <prod>
           <cProd>002</cProd>
           <cEAN>00000000000</cEAN>
-          <xProd>Produto B</xProd>
+          <xProd>One Piece Vol. 104</xProd>
           <NCM>87654321</NCM>
           <CFOP>5102</CFOP>
           <uCom>UN</uCom>
           <qCom>1</qCom>
-          <vUnCom>200.00</vUnCom>
-          <vProd>200.00</vProd>
+          <vUnCom>34.14</vUnCom>
+          <vProd>34.14</vProd>
           <cEANTrib>00000000000</cEANTrib>
           <uTrib>UN</uTrib>
           <qTrib>1</qTrib>
-          <vUnTrib>200.00</vUnTrib>
+          <vUnTrib>34.14</vUnTrib>
           <indTot>1</indTot>
         </prod>
         <imposto>
-          <vTotTrib>20</vTotTrib>
+          <vTotTrib>11.42</vTotTrib>
           <ICMS>
             <ICMS00>
               <orig>1</orig>
@@ -133,71 +133,18 @@
         </imposto>
       </det>
 
-      <det nItem="2">
-        <prod>
-          <cProd>001</cProd>
-          <cEAN>1234567890123</cEAN>
-          <xProd>Produto A</xProd>
-          <NCM>12345678</NCM>
-          <CFOP>5102</CFOP>
-          <uCom>UN</uCom>
-          <qCom>2</qCom>
-          <vUnCom>50.00</vUnCom>
-          <vProd>100.00</vProd>
-          <cEANTrib>1234567890123</cEANTrib>
-          <uTrib>UN</uTrib>
-          <qTrib>2</qTrib>
-          <vUnTrib>50.00</vUnTrib>
-          <indTot>1</indTot>
-        </prod>
-        <imposto>
-          <vTotTrib>20</vTotTrib>
-          <ICMS>
-            <ICMS00>
-              <orig>1</orig>
-              <CST>0</CST>
-              <modBC>3</modBC>
-              <vBC>20</vBC>
-              <pICMS>17</pICMS>
-              <vICMS>3.4</vICMS>
-            </ICMS00>
-          </ICMS>
-          <IPI>
-            <cEnq>999</cEnq>
-            <IPINT>
-              <CST>53</CST>
-            </IPINT>
-          </IPI>
-          <PIS>
-            <PISOutr>
-              <CST>0</CST>
-              <vBC>20</vBC>
-              <pPIS>2</pPIS>
-              <vPIS>0.4</vPIS>
-            </PISOutr>
-          </PIS>
-          <COFINS>
-            <COFINSOutr>
-              <CST>0</CST>
-              <qBCProd>0</qBCProd>
-              <vAliqProd>0</vAliqProd>
-              <vCOFINS>0</vCOFINS>
-            </COFINSOutr>
-          </COFINS>
-        </imposto>
-      </det>
 
       <!-- total -->
       <total>
         <ICMSTot>
-          <vBC>300.00</vBC>
-          <vICMS>54.00</vICMS>
-          <vProd>300.00</vProd>
-          <vIPI>0</vIPI>
-          <vPIS>0</vPIS>
-          <vCOFINS>0</vCOFINS>
-          <vNF>300.00</vNF>
-          <vTotTrib>60.00</vTotTrib>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vProd>34.14</vProd>
+          <vIPI>0.00</vIPI>
+          <vPIS>0.00</vPIS>
+          <vCOFINS>0.00</vCOFINS>
+          <vNF>34.14</vNF>
+          <vTotTrib>11.42</vTotTrib>
         </ICMSTot>
       </total>
 
@@ -205,12 +152,12 @@
       <transp>
         <modFrete>0</modFrete>
         <transporta>
-          <CNPJ>CNPJ</CNPJ>
-          <xNome>Nome da Transportadora</xNome>
+          <CNPJ>02. 034. 011/0001-00</CNPJ>
+          <xNome>FEDEX</xNome>
           <IE>random</IE>
-          <xEnder>logradouro</xEnder>
-          <xMun>municipio</xMun>
-          <UF>unidade federativa</UF>
+          <xEnder>RSC-287</xEnder>
+          <xMun>Santa Maria</xMun>
+          <UF>Rio Grande do Sul</UF>
         </transporta>
       </transp>
 

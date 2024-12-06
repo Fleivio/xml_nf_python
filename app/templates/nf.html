@@ -5,14 +5,14 @@
 {% endblock %}
 
 {% block additional_info %}
+
+<a class="btn btn-primary" href="/as_json/{{emissao._path}}">Ver como JSON</a>
+
 {% endblock %}
 
 {%block content%}
 
-<div class="container mt-4">
-  <h1 class="text-center">Emissão de Nota Fiscal</h1>
-  
-  <!-- Emissão -->
+<div class="container mt-4">  
   <h2>Emissor</h2>
   <table class="table table-bordered">
       <tr>
@@ -50,10 +50,6 @@
         <tr>
             <th>Telefone</th>
             <td>{{ destinatario.dest.enderDest.fone }}</td>
-        </tr>
-        <tr>
-            <th>Indicação de IE</th>
-            <td>{{ destinatario.dest.indIEDest }}</td>
         </tr>
     </table>
 
@@ -94,7 +90,7 @@
                 <td>
                     <strong>ICMS:</strong> R$ {{ produto.det.imposto.ICMS.ICMS00.vICMS }}<br>
                     <strong>PIS:</strong> R$ {{ produto.det.imposto.PIS.PISOutr.vPIS }}<br>
-                    <strong>IPI:</strong> R$0 <br>
+                    <strong>IPI:</strong> R$ 0 <br>
                     <strong>COFINS:</strong> R$ {{ produto.det.imposto.COFINS.COFINSOutr.vCOFINS }}
                 </td>
             </tr>

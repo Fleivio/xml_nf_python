@@ -193,11 +193,11 @@
           <vBC>300.00</vBC>
           <vICMS>54.00</vICMS>
           <vProd>300.00</vProd>
-          <vIPI>0</vIPI>
-          <vPIS>0</vPIS>
-          <vCOFINS>0</vCOFINS>
+          <vIPI>0.00</vIPI>
+          <vPIS>0.00</vPIS>
+          <vCOFINS>5.00</vCOFINS>
           <vNF>300.00</vNF>
-          <vTotTrib>800.00</vTotTrib>
+          <vTotTrib>54.00</vTotTrib>
         </ICMSTot>
       </total>
 
@@ -205,12 +205,12 @@
       <transp>
         <modFrete>0</modFrete>
         <transporta>
-          <CNPJ>CNPJ</CNPJ>
-          <xNome>Nome da Transportadora</xNome>
+          <CNPJ>02. 034. 011/0001-00</CNPJ>
+          <xNome>FEDEX</xNome>
           <IE>random</IE>
-          <xEnder>logradouro</xEnder>
-          <xMun>municipio</xMun>
-          <UF>unidade federativa</UF>
+          <xEnder>RSC-287</xEnder>
+          <xMun>Santa Maria</xMun>
+          <UF>Rio Grande do Sul</UF>
         </transporta>
       </transp>
 
