@@ -18,6 +18,3 @@ def read_as_dict(xml_path, xpath = None):
       dc = xmltodict.parse(f.read())
       dc['_path'] = xml_path
       return dc
-
-def to_json(xml_path):
-  return json.dumps(read_as_dict(xml_path), indent=4)

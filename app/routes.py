@@ -1,12 +1,11 @@
-from flask import Blueprint, render_template, jsonify
+from flask import Blueprint, render_template, jsonify, send_file
 import os
-from app.src.tojson import read_as_dict, to_json
-from lxml import etree
-
+from app.src.todict import read_as_dict
 
 main = Blueprint('main', __name__)
 
 nf_directory = 'nfs'
+root_dir = os.path.dirname(os.path.abspath(__file__+"../../"))
 
 def notas_path():
     names =  os.listdir(nf_directory)
@@ -50,7 +49,6 @@ def impostos_totais():
     notas.sort(key=lambda x: float(x['tribut']['ICMSTot']['vTotTrib']), reverse=True)
     return render_template('impostos.html', notas = notas)
 
-
 @main.route('/fornecedores')
 def fornecedores():
     fornecedores = []
@@ -77,7 +75,6 @@ def fornecedores():
 
 
     return render_template('fornecedores.html', fornecedores = fornecedores)
-
 
 @main.route('/transportadoras')
 def transportadoras():
@@ -109,3 +106,11 @@ def transportadoras():
 def nf_json(nfe):
     dict = read_as_dict(f'{nf_directory}/{nfe}')
     return jsonify(dict)
+
+@main.route('/all_prods')
+def all_prods():
+    return send_file(root_dir + '/files/prods/all.xml')
+
+@main.route('/prods/nfs/<nfe>')
+def nf_prods(nfe):
+    return send_file(root_dir + '/files/prods/' + nfe)
