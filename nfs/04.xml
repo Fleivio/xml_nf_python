@@ -78,7 +78,7 @@
         <xPais>BRASIL</xPais>
       </entrega>
 
-      <det nItem="2">
+      <det nItem="3">
         <prod>
           <cProd>001</cProd>
           <cEAN>1234567890123</cEAN>
@@ -131,7 +131,6 @@
           </COFINS>
         </imposto>
       </det>
-
 
       <!-- item -->
       <det nItem="1">
@@ -245,13 +244,13 @@
       <!-- total -->
       <total>
         <ICMSTot>
-          <vBC>300.00</vBC>
+          <vBC>400.00</vBC>
           <vICMS>54.00</vICMS>
           <vProd>300.00</vProd>
           <vIPI>0.00</vIPI>
           <vPIS>0.00</vPIS>
           <vCOFINS>5.00</vCOFINS>
-          <vNF>300.00</vNF>
+          <vNF>400.00</vNF>
           <vTotTrib>54.00</vTotTrib>
         </ICMSTot>
       </total>
